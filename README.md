@@ -5,7 +5,7 @@ A simple Element Mover - This small app is just a simple test on the key press t
 ### Setup new player object
 ![](01elmover.png)
 
-### Create new Element (The Read Box) on document body
+### Create new Element (The Red Box) on document body
 ![](02elmover.png)
 
 ### This block is jus to test on random color code
