@@ -8,7 +8,7 @@ A simple Element Mover - This small app is just a simple test on the key press t
 ### Create new Element (The Red Box) on document body
 ![](02elmover.png)
 
-### This block is jus to test on random color code
+### This block is just to test on random color code
 ![](03elmover.png)
 
 ## Load the app
