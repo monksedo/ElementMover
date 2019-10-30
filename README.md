@@ -1,5 +1,5 @@
 # Element Mover
-A simple Element Mover - This mall app is just a simple test on the key press tracking and element moving code
+A simple Element Mover - This small app is just a simple test on the key press tracking and element moving code.
 
 ## Code Snippet
 ### Setup new player object
