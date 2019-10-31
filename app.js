@@ -55,7 +55,7 @@ document.addEventListener("keydown", function (e) {
 // Build the square box on body 
 function build() {
    player.el = document.createElement("div");
-   player.x = 20;
+   player.x = 30;
    player.y = 100;
    player.el.style.position = "absolute";
    player.el.style.width = "100px";
