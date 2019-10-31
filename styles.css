@@ -49,3 +49,7 @@ ul {
 .red {
    color: red;
 }
+
+div {
+   margin: 2rem auto;
+}

@@ -1,14 +1,13 @@
-/////////////////////////////////////////////////////////////////////////////////////
-// Create random color in hex value - example #ff00ff;
 
 var bgColor = document.querySelector("#bgColor");
 bgColor.addEventListener("click", function () {
    document.body.style.backgroundColor = ranColor();
+   getElBCR();
 });
 
 function ranColor() {
    return "#" + Math.random().toString(16).substr(-6);
-}
+};
 
 ///////////////////////////////////////////////////////////////////////////////////////
 // JavaScript DOMContentLoaded
@@ -24,7 +23,7 @@ var player = {
    speed: 100,
    x: 100,
    y: 100
-}
+};
 
 // build the square box when DOMContent full loaded
 document.addEventListener("DOMContentLoaded", build);
@@ -35,15 +34,19 @@ document.addEventListener("keydown", function (e) {
    var key = e.keyCode;
    if (key === 37) {
       player.x -= player.speed;
+      getElBCR();
    }
    if (key === 39) {
       player.x += player.speed;
+      getElBCR();
    }
    if (key === 40) {
       player.y += player.speed;
+      getElBCR();
    }
    if (key === 38) {
       player.y -= player.speed;
+      getElBCR();
    }
    player.el.style.left = player.x + "px";
    player.el.style.top = player.y + "px";
@@ -52,7 +55,7 @@ document.addEventListener("keydown", function (e) {
 // Build the square box on body 
 function build() {
    player.el = document.createElement("div");
-   player.x = 100;
+   player.x = 20;
    player.y = 100;
    player.el.style.position = "absolute";
    player.el.style.width = "100px";
@@ -64,6 +67,11 @@ function build() {
    document.body.appendChild(player.el);
 }
 
+
+// Get Bounding Client Rect
+function getElBCR() {
+   console.log(player.el.getBoundingClientRect());
+}
 
 
 
